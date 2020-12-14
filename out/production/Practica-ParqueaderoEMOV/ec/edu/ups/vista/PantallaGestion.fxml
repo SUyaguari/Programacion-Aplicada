@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="405.0" prefWidth="600.0" style="-fx-background-color: #fefefe;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.ups.vista.PantallaGestion">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: #01acc8;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="429.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/LogoCuenca.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="19.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/OtroEmovPeroChikitoYAzul.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="235.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestión de Parqueadero">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCerrarSesion" layoutX="499.0" layoutY="369.0" mnemonicParsing="false" onAction="#eventCerrarSesion" text="Cerrar Sesión" />
+      <ImageView fitHeight="324.0" fitWidth="270.0" layoutX="14.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/Emov.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRetirarVehiculo" layoutX="310.0" layoutY="258.0" mnemonicParsing="false" onAction="#eventRetirarVehiculo" text="Retirar Vehículo" />
+      <Button fx:id="btnReservaciones" layoutX="310.0" layoutY="301.0" mnemonicParsing="false" onAction="#eventReservaciones" text="Reservaciones y Arrendamientos" />
+      <Button fx:id="btnParqueadero" layoutX="310.0" layoutY="340.0" mnemonicParsing="false" onAction="#eventParqueadero" text="Parqueadero" />
+      <Button fx:id="btnIngresarVehiculos" layoutX="310.0" layoutY="217.0" mnemonicParsing="false" onAction="#eventIngresarVehiculos" text="Ingresar Vehículo" />
+      <Button fx:id="btnRegistrarUsuarios" layoutX="310.0" layoutY="177.0" mnemonicParsing="false" onAction="#eventRegistrarUsuarios" text="Rgistrar Usuarios" />
+      <Text layoutX="235.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+         <font>
+            <Font name="Arial Unicode MS" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNombre" editable="false" layoutX="290.0" layoutY="135.0" prefHeight="26.0" prefWidth="150.0" />
+      <Text layoutX="447.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rol:">
+         <font>
+            <Font name="Arial Unicode MS" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtRol" editable="false" layoutX="481.0" layoutY="135.0" prefHeight="26.0" prefWidth="91.0" />
+   </children>
+</AnchorPane>

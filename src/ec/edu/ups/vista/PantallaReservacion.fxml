@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.ups.vista.PantallaReservacion">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: #01acc8;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="429.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/LogoCuenca.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="19.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/OtroEmovPeroChikitoYAzul.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="14.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/reparacion-de-autos.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="258.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservaciones y Arrendamientos">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="260.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtBuscarPlaca" layoutX="348.0" layoutY="151.0" prefHeight="26.0" prefWidth="157.0" promptText="Placa" />
+      <Button fx:id="btnBuscar" layoutX="520.0" layoutY="151.0" mnemonicParsing="false" onAction="#eventBuscar" text="Buscar" />
+      <TextField fx:id="txtFechaIngreso" editable="false" layoutX="379.0" layoutY="324.0" prefHeight="26.0" prefWidth="193.0" />
+      <Text fx:id="lblIngreso" layoutX="260.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Ingreso:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblSalida" layoutX="260.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Salida:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCedula" editable="false" layoutX="349.0" layoutY="207.0" prefHeight="26.0" prefWidth="226.0" />
+      <Text layoutX="263.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="fechaSalida" editable="false" layoutX="376.0" layoutY="358.0" prefHeight="26.0" prefWidth="194.0" promptText="Fecha" />
+      <ComboBox fx:id="cbxTipo" layoutX="387.0" layoutY="283.0" onAction="#eventCbxMostrar" prefHeight="26.0" prefWidth="186.0" />
+      <Text layoutX="260.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de contrato:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAceptar" layoutX="433.0" layoutY="393.0" mnemonicParsing="false" onAction="#eventAceptar" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="517.0" layoutY="393.0" mnemonicParsing="false" onAction="#eventCancelar" text="Cancelar" />
+      <DatePicker fx:id="fechaSalida1" editable="false" layoutX="379.0" layoutY="324.0" prefHeight="26.0" prefWidth="194.0" promptText="Fecha" />
+      <Button fx:id="btnRegistrar" layoutX="414.0" layoutY="180.0" mnemonicParsing="false" onAction="#eventRegistrar" text="Click aqui">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+      </Button>
+      <Text layoutX="263.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si no tiene registrado su vehículo">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="263.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puesto:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPuesto" layoutX="348.0" layoutY="247.0" prefHeight="26.0" prefWidth="139.0" promptText="1-50" />
+      <Button fx:id="btnParqueadero" layoutX="494.0" layoutY="248.0" mnemonicParsing="false" onAction="#eventMostrarParqueadero" text="Ver Puestos" />
+   </children>
+</AnchorPane>

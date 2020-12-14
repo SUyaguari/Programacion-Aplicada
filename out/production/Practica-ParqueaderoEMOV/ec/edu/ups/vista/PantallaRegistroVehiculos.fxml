@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="466.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.ups.vista.PantallaRegistroVehiculos">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="409.0" style="-fx-background-color: #01acc8;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="262.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../kkPruebas/ParqueaderoEMOV-EC/src/ec/edu/ups/imagen/LogoCuenca.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="6.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../kkPruebas/ParqueaderoEMOV-EC/src/ec/edu/ups/imagen/OtroEmovPeroChikitoYAzul.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="262.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/LogoCuenca.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="6.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/OtroEmovPeroChikitoYAzul.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="112.0" text="Cedula:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCedula" layoutX="149.0" layoutY="111.0" prefHeight="26.0" prefWidth="241.0" />
+      <Label layoutX="28.0" layoutY="155.0" text="Nombre:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="200.0" text="Apellido:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="249.0" text="Correo:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="298.0" text="Contraseña:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNoombre" layoutX="149.0" layoutY="154.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtApellido" layoutX="149.0" layoutY="199.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtCorreo" layoutX="149.0" layoutY="248.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtContraseña" layoutX="149.0" layoutY="297.0" prefHeight="26.0" prefWidth="242.0" />
+      <Button fx:id="btnRegistrar" layoutX="210.0" layoutY="420.0" mnemonicParsing="false" onAction="#EventRegistro" text="Registrar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="314.0" layoutY="420.0" mnemonicParsing="false" onAction="#EventCancelar" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="27.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Placa:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPlaca" layoutX="150.0" layoutY="341.0" prefHeight="26.0" prefWidth="242.0" />
+      <Text layoutX="28.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtModelo" layoutX="149.0" layoutY="384.0" prefHeight="26.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>

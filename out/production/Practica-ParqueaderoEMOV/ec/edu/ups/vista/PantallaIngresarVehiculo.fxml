@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="417.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.ups.vista.PantallaIngresarVehiculo">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="439.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/LogoCuenca.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="29.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/OtroEmovPeroChikitoYAzul.PNG" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: #01acc8;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="200.0" layoutX="429.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/LogoCuenca.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="187.0" layoutX="19.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/OtroEmovPeroChikitoYAzul.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="266.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="14.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagen/reparacion-de-autos.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="334.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Vehículo">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtBuscarPlaca" layoutX="346.0" layoutY="153.0" prefHeight="26.0" prefWidth="157.0" promptText="Placa" />
+      <Button fx:id="btnBuscar" layoutX="518.0" layoutY="153.0" mnemonicParsing="false" onAction="#eventBuscar" text="Buscar" />
+      <Button fx:id="btnRegistrar" layoutX="417.0" layoutY="188.0" mnemonicParsing="false" onAction="#eventRegistrar" text="Click aqui">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+      </Button>
+      <Text layoutX="266.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si no tiene registrado su vehículo">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCedula" editable="false" layoutX="366.0" layoutY="234.0" prefHeight="26.0" prefWidth="202.0" />
+      <Text layoutX="289.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="289.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Placa:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPlaca" editable="false" layoutX="365.0" layoutY="266.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="txtFecha" editable="false" layoutX="365.0" layoutY="300.0" prefHeight="26.0" prefWidth="202.0" />
+      <Text layoutX="289.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnIngresar" layoutX="429.0" layoutY="377.0" mnemonicParsing="false" onAction="#eventIngresar" text="Ingresar" />
+      <Button fx:id="btnCancelar" layoutX="517.0" layoutY="377.0" mnemonicParsing="false" onAction="#eventCancelar" text="Cancelar" />
+      <TextField fx:id="txtPuestos" layoutX="365.0" layoutY="334.0" prefHeight="26.0" prefWidth="122.0" promptText="1 - 50" />
+      <Text layoutX="289.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puesto:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnPuestos" layoutX="492.0" layoutY="335.0" mnemonicParsing="false" onAction="#eventVerPuestos" text="Ver Puestos" />
+   </children>
+</AnchorPane>
